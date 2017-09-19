@@ -20,8 +20,8 @@ ROT = np.deg2rad(90)
 SCALE = (36.2, 36.4)
 OFFSET = (530, 170)
 
-account_sid = "AC72f27f66f58213e4732d91fdf1ed6fed"
-auth_token = "3f43aa2b977455e2203a8d5276d6f238"
+account_sid = #your accountsid
+auth_token = #your auth token
 client = Client(account_sid,auth_token)
 
 def personDetection(array):
