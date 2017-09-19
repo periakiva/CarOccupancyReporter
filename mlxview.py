@@ -28,7 +28,7 @@ def personDetection(array):
         sleep(0.25)        
 	for j in range(0,array.shape[0]):
 		if np.mean(array[j,:])>30:
-			client.messages.create(to="INSERT YOUR PHONE NUMBER",from_="+12017293901", body = "Car Occupancy Reporter Here, There is someone in the car!")	
+			client.messages.create(to="INSERT YOUR PHONE NUMBER",from_="INSERT YOUR TWILIO PHONE NUMBER", body = "Car Occupancy Reporter Here, There is someone in the car!")	
 			print "some is in the car"
 			return True
 	return False
