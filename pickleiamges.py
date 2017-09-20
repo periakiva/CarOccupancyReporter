@@ -13,8 +13,8 @@ from six.moves.urllib.request import urlretrieve
 import cPickle as pickle
 import cv2
 
-data_root = '/home/pi/school/mlxd/training'
-test_root = '/home/pi/school/mlxd/testing'
+data_root = '/home/pi/school/mlxd/training' #your path to training data of images
+test_root = '/home/pi/school/mlxd/testing'  #your path to testing data of images
 
 train_folders = [os.path.join(data_root,d) for d in sorted(os.listdir(data_root)) if os.path.isdir(os.path.join(data_root,d))]
 test_folders = [os.path.join(test_root,d) for d in sorted(os.listdir(test_root)) if os.path.isdir(os.path.join(test_root,d))]
