@@ -50,6 +50,7 @@ def load_letter(folder,min_num_images):
     print('full dataset tensor:', dataset.shape)
     return dataset
 
+# turn images to binary files
 def maybe_pickle(data_folders, min_num_images_per_class,force=False):
     dataset_names=[]
     for folder in data_folders:
